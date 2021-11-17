@@ -1,0 +1,114 @@
+:root {
+    --main-font: font-family: 'Roboto', sans-serif;
+    --secondary-font: font-family: 'Raleway', sans-serif;
+    --main-color: #2196F3;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+/* ==== header ====*/
+.header {
+    font-style: normal;
+}
+
+.logo-link {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+}
+
+CZY PONIZEJ DOBRZE?
+.navigation,
+.navigation-list-item-link {
+font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+
+    color:#212121; 
+}
+
+
+.navigation-list-item-link:hover,
+.navigation-list-item-link:focus {
+    color: var(--main-color);
+}
+
+
+
+
+.section-background-color {
+    background: #2F303A;
+}  
+
+
+/* ==== end header ====*/
+
+
+/* ==== main ====*/
+/* ==== end main ====*/
+
+
+
+
+/* ==== footer ====*/
+.footer-background-color {
+    background: #2F303A;
+}
+
+
+/* ==== address ====*/
+
+.address {
+    font-style: normal;
+}
+
+
+.address-postal,
+.address-email,
+.address-phone-number {
+    font-family: Roboto;   /czy to trzeba/
+    font-style: normal;    /czy to trzeba/???
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.714;
+
+    letter-spacing: 0.03em;  
+}
+
+.address-postal {
+    color: #FFFFFF;
+}
+
+
+
+.address-email,
+.address-phone-number {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ==== end address ====*/
+
+
+
+
+/* ==== end footer ====*/
+
+
+
+
+
+background: #2F303A;
+
+
+<!--czy to dobrze-->
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
