@@ -8,79 +8,232 @@ body {
     font-family: var(--main-font);
 }
 
-/* ==== header ====*/
-.header {
-    font-style: normal;
+/* ========components========*/
+
+/* ====buttons====*/
+
+.modal-button {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    background:var(--main-color);
+    color: #FFFFFF;
 }
 
-.logo-link {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.192;
-
+.modal-button-portfolio {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
     letter-spacing: 0.03em;
+    cursor: pointer;
+    background: #F5F4FA;
+    color: #212121;
+}
 
+.modal-button-portfolio-active-page-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    background:var(--main-color);
+    color: #FFFFFF;  
+}
+
+/*hoover-button*/ 
+
+.modal-button:hover,
+.modal-button:focus {
+    color: #FFFFFF;
+}
+
+.modal-button-portfolio:hover,
+.modal-button-portfolio:focus {
     color: var(--main-color);
 }
 
-CZY PONIZEJ DOBRZE?
-.navigation,
+.modal-button-portfolio-active-page-button:hover 
+.modal-button-portfolio-active-page-button:focus {
+    color: #FFFFFF;    
+}   
+
+/* ====end-buttons====*/
+
+/* ========end-components========*/
+
+/* =============header=============*/
+
+.logo-link {
+    font-family:var(--secondary-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    text-decoration: none;  
+    color: var(--main-color);
+}
+
+.logo-link-header-black-color {
+    color:#000000;
+}
+
 .navigation-list-item-link {
-font-weight: 500;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.02em;
-
-    color:#212121; 
+    text-decoration: none; 
+    color: #212121; 
 }
 
+/*==portfolio-navigation-list-actual-page-marker==*/
+
+.navigation-list-item-link-actual-page {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    text-decoration: none; 
+    color: var(--main-color); 
+}
+/*==end-portfolio-navigation-list-actual-page-marker==*/
 
 .navigation-list-item-link:hover,
 .navigation-list-item-link:focus {
     color: var(--main-color);
 }
 
+.header-email,
+.header-phone-number {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.02em;
+    text-decoration: none; 
+    color: #757575; 
+}
 
+/*===email-phone-number-hover-focus===*/
 
+.header-email:hover,
+.header-email:focus,
+.header-phone-number:hover,
+.header-phone-number:focus {
+    color: var(--main-color);  
+}
+
+/*===end-email-phone-number-hover-focus===*/
 
 .section-background-color {
     background: #2F303A;
 }  
 
+.main-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/*=============end-header=============*/
 
-/* ==== end header ====*/
+/*===============main===============*/
 
+/*===nasze-atuty===*/
 
-/* ==== main ====*/
-/* ==== end main ====*/
+.lorem-ipsum-undertitle {
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}   
 
+.description {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: #757575;   
+}
 
+/*===end-nasze-atuty===*/
 
+/*===nasz-zespół=== */
 
-/* ==== footer ====*/
+.secondary-header {
+    font-size: 36px;
+    line-height: 1.166;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.first-name-last-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.speciality {
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/*===end-nasz-zespół===*/
+
+/*===projects===*/
+
+.project-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em; 
+    color: #212121;  
+}
+
+.project-type {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* ===end-projects=== */
+
+/*=============end-main=============*/
+
+/*=============footer=============*/
+
 .footer-background-color {
     background: #2F303A;
 }
 
-
-/* ==== address ====*/
+/*===address===*/
 
 .address {
     font-style: normal;
 }
 
+.logo-link-footer-white-color {
+    color: #FFFFFF;  
+}
 
 .address-postal,
 .address-email,
-.address-phone-number {
-    font-family: Roboto;   /czy to trzeba/
-    font-style: normal;    /czy to trzeba/???
-    font-weight: normal;
+.address-phone-number {   
     font-size: 14px;
     line-height: 1.714;
-
     letter-spacing: 0.03em;  
 }
 
@@ -88,27 +241,24 @@ font-weight: 500;
     color: #FFFFFF;
 }
 
-
-
 .address-email,
 .address-phone-number {
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* ==== end address ====*/
+/*===hover-focus===*/
 
+.address-postal:hover,
+.address-postal:focus,
+.address-email:hover,
+.address-email:focus,
+.address-phone-number:hover,
+.address-phone-number:focus {
+    color: var(--main-color);     
+}
 
+/*===end-hover-focus===*/
 
+/*===end-address===*/
 
-/* ==== end footer ====*/
-
-
-
-
-
-background: #2F303A;
-
-
-<!--czy to dobrze-->
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif;
+/* =============end-footer=============*/
