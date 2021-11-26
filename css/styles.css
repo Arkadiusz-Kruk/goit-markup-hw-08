@@ -8,6 +8,59 @@ body {
     font-family: var(--main-font);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+p,
+ul {
+  padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1200px; /* czy ten max dobrze */
+    padding: 0 15px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-two {
+    padding-bottom: 94px;
+}  /*sprawdz czy dobrze te paddingi sie nakladaja */
+
+.list {
+    list-style: none;
+} 
+
+.header .container {
+    display: flex;
+
+}
+
+.navigation-list {
+    display: flex;
+}
+
+.header-adress {
+    display: flex;
+}
+
 /* ========components========*/
 
 /* ====buttons====*/
@@ -23,6 +76,16 @@ body {
     cursor: pointer;
     background:var(--main-color);
     color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: "Roboto"; /* potem usun Roboto */
+}
+
+.modal-button-text {
+    padding-top: 10px;
+    padding-right: 41px;
+    padding-bottom: 10px;
+    padding-left: 42px;
 }
 
 .modal-button-portfolio {
@@ -70,6 +133,12 @@ body {
 
 /* =============header=============*/
 
+.logo-box {
+    margin-top: 24px;
+    margin-right: 93px;
+    margin-bottom: 25px;
+}
+
 .logo-link {
     font-family:var(--secondary-font);
     font-weight: bold;
@@ -82,6 +151,15 @@ body {
 
 .logo-link-header-black-color {
     color:#000000;
+}
+
+.navigation-list-item {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.navigation-list-item:not(:last-child) {
+    margin-right: 46px;
 }
 
 .navigation-list-item-link {
@@ -110,6 +188,19 @@ body {
     color: var(--main-color);
 }
 
+.header-email {
+    margin-top: 32px;
+    margin-right: 50px;
+    margin-bottom: 32px;
+    margin-left: 371px;
+}
+
+.header-phone-number {
+    margin-top: 32px;
+    margin-right: 12px;
+    margin-bottom: 32px;
+}
+
 .header-email,
 .header-phone-number {
     font-weight: 500;
@@ -135,6 +226,21 @@ body {
     background: #2F303A;
 }  
 
+.background-box {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    text-align: center; */
+}
+
+.main-header-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 30px;
+}
+
 .main-header {
     font-weight: 900;
     font-size: 44px;
@@ -142,12 +248,36 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    width: 696px;
+    
 }
+
+.modal-button-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+} 
+
+
+
 /*=============end-header=============*/
 
 /*===============main===============*/
 
 /*===nasze-atuty===*/
+
+.lorem-ipsum-list {
+    display: flex;
+}
+
+.lorem-ipsum-list-item {
+
+}
+
+.lorem-ipsum-list-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .lorem-ipsum-undertitle {
     font-size: 14px;
@@ -155,25 +285,67 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
+    margin-bottom: 10px;
 }   
 
 .description {
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: #757575;   
+    color: #757575;
+    font-family: "Roboto"; /* potem usun Roboto */
 }
 
 /*===end-nasze-atuty===*/
 
+/*===czym-się-zajmujemy===*/
+
+.gallery-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.gallery-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/*===end-czym-się-zajmujemy===*/
+
+
 /*===nasz-zespół=== */
+
+.about-us {
+    background: #F5F4FA;
+}
 
 .secondary-header {
     font-size: 36px;
     line-height: 1.166;
     letter-spacing: 0.03em;
     color: #212121;
+    text-align: center;
+    font-family: "Roboto"; /* potem usun Roboto */
 }
+
+.team-gallery-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.team-gallery-item-item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin: 0;
+}
+
+.team-gallery-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
 
 .first-name-last-name {
     font-weight: 500;
