@@ -1,6 +1,6 @@
 :root {
-    --main-font: font-family: 'Roboto', sans-serif;
-    --secondary-font: font-family: 'Raleway', sans-serif;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
     --main-color: #2196F3;
 }
 
@@ -78,7 +78,7 @@ img {
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    font-family: "Roboto"; /* potem usun Roboto */
+    padding: 0;
 }
 
 .modal-button-text {
@@ -97,6 +97,16 @@ img {
     cursor: pointer;
     background: #F5F4FA;
     color: #212121;
+    border-radius: 4px;
+    border: 0;
+    padding: 0;
+}
+
+.modal-button-portfolio-text {
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
 }
 
 .modal-button-portfolio-active-page-button {
@@ -108,6 +118,9 @@ img {
     cursor: pointer;
     background:var(--main-color);
     color: #FFFFFF;  
+    border: 0;
+    border-radius: 4px;
+    padding: 0;
 }
 
 /*hoover-button*/ 
@@ -132,6 +145,11 @@ img {
 /* ========end-components========*/
 
 /* =============header=============*/
+
+/* =border-headera=*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .logo-box {
     margin-top: 24px;
@@ -293,7 +311,6 @@ img {
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: #757575;
-    font-family: "Roboto"; /* potem usun Roboto */
 }
 
 /*===end-nasze-atuty===*/
@@ -324,11 +341,11 @@ img {
     letter-spacing: 0.03em;
     color: #212121;
     text-align: center;
-    font-family: "Roboto"; /* potem usun Roboto */
 }
 
 .team-gallery-list {
     display: flex;
+    flex-wrap: wrap;  /*sprawdz może usun*/
     justify-content: center;
     margin-top: 50px;
 }
@@ -340,38 +357,109 @@ img {
     margin: 0;
 }
 
+
 .team-gallery-item:not(:last-child) {
     margin-right: 30px;
 }
-
-
-
 
 .first-name-last-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.187;
     letter-spacing: 0.03em;
-
+    text-align: center;
     color: #212121;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .speciality {
     font-size: 16px;
     line-height: 1.187;
     letter-spacing: 0.03em;
+    text-align: center;
     color: #757575;
+    padding-bottom: 30px;
 }
 
 /*===end-nasz-zespół===*/
 
+/*==portfolio-buttons-section==*/
+
+.modal-button-portfolio {
+    
+}
+
+
+.modal-button-portfolio-active-page-button {
+    
+}
+
+.box-buttons {
+   margin-bottom: 50px;
+ 
+}
+
+.box-buttons-list {
+    /*display: inline-flex;
+    justify-self: start; */
+    display: flex;
+    justify-content:center
+    /*justify-content:center; /* czy to dobrze*/
+    
+}
+
+.filters .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-buttons-list li:not(:last-child) {
+    margin-right: 8px;  /*sprawdz*/
+}
+
+
+
+/*==end-portfolio-buttons-section==*/
+
+
 /*===projects===*/
+
+.card-project-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+}
+
+.card-project-set-item {
+    flex-basis: calc(100% / 3 - 30px);
+}
+
+.card-project-set-item:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
+.services-gallery-picture {
+  background: #ffffff;
+  margin: 0 30px 0 0;
+}
+
+.services-gallery-description {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  max-width: 370px;
+}
 
 .project-name {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em; 
-    color: #212121;  
+    color: #212121; 
+    padding-top: 20px;
+    padding-right: 24px; 
+    margin-bottom: 4px;
+    padding-left: 24px;
 }
 
 .project-type {
@@ -379,6 +467,9 @@ img {
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
 
 /* ===end-projects=== */
@@ -389,16 +480,51 @@ img {
 
 .footer-background-color {
     background: #2F303A;
+    
 }
 
 /*===address===*/
+
+.footer-background-color .container {
+    display: flex;
+    flex-direction: column; 
+    align-items: baseline;
+}
 
 .address {
     font-style: normal;
 }
 
+.address-postal {
+    margin-bottom: 9px;
+}
+
+.logo-box-footer {
+    padding-top: 60px;
+    margin-bottom: 20px;
+}   
+
+.logo-link-footer {
+    font-family:var(--secondary-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    text-decoration: none;  
+    color: var(--main-color);
+}
+
 .logo-link-footer-white-color {
     color: #FFFFFF;  
+}
+
+.address-box {
+    padding-bottom: 60px;
+}
+
+.address-email {
+    display: inline-block;
+    margin-bottom: 9px;
 }
 
 .address-postal,
@@ -406,7 +532,8 @@ img {
 .address-phone-number {   
     font-size: 14px;
     line-height: 1.714;
-    letter-spacing: 0.03em;  
+    letter-spacing: 0.03em;
+    text-decoration: none;
 }
 
 .address-postal {
