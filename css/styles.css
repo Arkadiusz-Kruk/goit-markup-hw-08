@@ -29,7 +29,7 @@ img {
 }
 
 .container {
-    max-width: 1200px; /* czy ten max dobrze */
+    width: 1200px;
     padding: 0 15px;
     align-items: center;
     margin: 0 auto;
@@ -146,7 +146,7 @@ img {
 
 /* =============header=============*/
 
-/* =border-headera=*/
+/*=border-header=*/
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -215,7 +215,6 @@ img {
 
 .header-phone-number {
     margin-top: 32px;
-    margin-right: 12px;
     margin-bottom: 32px;
 }
 
@@ -266,9 +265,7 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-
-    width: 696px;
-    
+    width: 696px;  
 }
 
 .modal-button-box {
@@ -276,8 +273,6 @@ img {
     justify-content: center;
     margin-bottom: 200px;
 } 
-
-
 
 /*=============end-header=============*/
 
@@ -287,10 +282,6 @@ img {
 
 .lorem-ipsum-list {
     display: flex;
-}
-
-.lorem-ipsum-list-item {
-
 }
 
 .lorem-ipsum-list-item:not(:last-child) {
@@ -386,15 +377,6 @@ img {
 
 /*==portfolio-buttons-section==*/
 
-.modal-button-portfolio {
-    
-}
-
-
-.modal-button-portfolio-active-page-button {
-    
-}
-
 .box-buttons {
    margin-bottom: 50px;
  
@@ -417,8 +399,6 @@ img {
 .box-buttons-list li:not(:last-child) {
     margin-right: 8px;  /*sprawdz*/
 }
-
-
 
 /*==end-portfolio-buttons-section==*/
 
@@ -527,6 +507,14 @@ img {
     margin-bottom: 9px;
 }
 
+.address-email-portfolio {
+    display: inline-block;
+    margin-bottom: 9px;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+}
+
 .address-postal,
 .address-email,
 .address-phone-number {   
@@ -541,7 +529,8 @@ img {
 }
 
 .address-email,
-.address-phone-number {
+.address-phone-number,
+.address-email-portfolio {
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -552,7 +541,9 @@ img {
 .address-email:hover,
 .address-email:focus,
 .address-phone-number:hover,
-.address-phone-number:focus {
+.address-phone-number:focus,
+.address-email-portfolio:hover,
+.address-email-portfolio:focus {
     color: var(--main-color);     
 }
 
