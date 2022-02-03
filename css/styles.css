@@ -307,6 +307,26 @@ img {
   margin-bottom: 10px;
 }
 
+.feature-icon {
+  width: 270px;
+  height: 120px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  box-sizing: border-box;
+  fill: #afb1b8;
+}
+
+.feature-icon:hover,
+.feature-icon:focus {
+  fill: var(--main-color);
+  box-sizing: border-box;
+  width: 270px;
+  height: 120px;
+  border: 1px solid var(--main-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 .description {
   font-size: 14px;
   line-height: 1.714;
