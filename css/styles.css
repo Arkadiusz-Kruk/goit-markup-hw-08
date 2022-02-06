@@ -238,7 +238,6 @@ background-color: var(--main-color);
   box-sizing: border-box;
   width: 16px;
   height: 12px;
-  box-sizing: border-box;
 }
 
 .adress-icon-second:hover,
@@ -247,7 +246,6 @@ background-color: var(--main-color);
   box-sizing: border-box;
   width: 10px;
   height: 16px;
-  box-sizing: border-box;
 }
 
 .adress-list__link-header {
@@ -402,31 +400,34 @@ background-color: var(--main-color);
 }
 
 .feature-icon {
-  width: 270px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   border-radius: 4px;
   box-sizing: border-box;
-  fill: #f5f4fa;
+  margin-top: 25px;
+  margin-right: 100px;
+  margin-bottom: 25px;
+  margin-left: 100px;
 }
 
 .feature-list__link {
+  display: inline-block;
   width: 270px;
   height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .feature-list__link:hover,
 .feature-list__link:focus {
   color: var(--main-color);
+  fill: var(--main-color);
 }
 
 .feature-icon:hover,
 .feature-icon:focus {
   fill: var(--main-color);
-  box-sizing: border-box;
-  width: 270px;
-  height: 120px;
-  border: 1px solid var(--main-color);
-  border-radius: 4px;
+  color: var(--main-color);
   box-sizing: border-box;
 }
 
@@ -555,34 +556,117 @@ background-color: var(--main-color);
   margin-right: 30px;
 }
 
-.client-icon {
+.client-gallery-item {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.client-icon-box {
+  width: 170px;
+  height: 92px;
+
+  box-sizing: border-box;
+}
+
+.client-icon-1 {
+  width: 41px;
+  height: 46.7px;
+  box-sizing: border-box;
   fill: #afb1b8;
+  margin-top: 24.71px;
+  margin-right: 65px;
+  margin-bottom: 20.58px;
+  margin-left: 64px;
+}
+
+.client-icon-2 {
+  width: 40px;
+  height: 52px;
+  box-sizing: border-box;
+  fill: #afb1b8;
+  margin-top: 20.71px;
+  margin-right: 65px;
+  margin-bottom: 19.29px;
+  margin-left: 65px;
+}
+
+.client-icon-3 {
+  width: 44.46px;
+  height: 41.18px;
+  box-sizing: border-box;
+  fill: #afb1b8;
+  margin-top: 24.7px;
+  margin-right: 64.86px;
+  margin-bottom: 26.12px;
+  margin-left: 61.68px;
+}
+
+.client-icon-4 {
+  width: 84.44px;
+  height: 40.62px;
+  box-sizing: border-box;
+  fill: #afb1b8;
+  margin-top: 24.7px;
+  margin-right: 42.56px;
+  margin-bottom: 26.68px;
+  margin-left: 43px;
+}
+
+.client-icon-5 {
+  width: 62.54px;
+  height: 45.43px;
+  box-sizing: border-box;
+  fill: #afb1b8;
+  margin-top: 22.77px;
+  margin-right: 53.46px;
+  margin-bottom: 23.8px;
+  margin-left: 54px;
+}
+
+.client-icon-6 {
+  width: 93.79px;
+  height: 43.93px;
+  box-sizing: border-box;
+  fill: #afb1b8;
+  margin-top: 22.77px;
+  margin-right: 38.21px;
+  margin-bottom: 25.31px;
+  margin-left: 38px;
 }
 
 .client-list__link {
+  display: inline-flex;
   width: 170px;
   height: 92px;
+  border-color: var(--main-color);
+  fill: var(--main-color);
 }
 
-.client-icon:hover,
-.client-icon:focus {
+.client-icon-box:hover,
+.client-icon-box:focus {
   fill: var(--main-color);
   box-sizing: border-box;
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--main-color);
-  border-radius: 4px;
-  box-sizing: border-box;
+  border-color: var(--main-color);
 }
 
 .client-list__link:hover,
 .client-list__link:focus {
   color: var(--main-color);
+  fill: var(--main-color);
+  width: 170px;
+  height: 92px;
+  border-color: var(--main-color);
+}
+
+.client-gallery-item:hover,
+.client-gallery-item:focus {
+  color: var(--main-color);
+  width: 170px;
+  height: 92px;
+  border-color: var(--main-color);
 }
 
 /*===End-Nasi-klienci===*/
