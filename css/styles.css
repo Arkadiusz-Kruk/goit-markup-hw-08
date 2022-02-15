@@ -420,14 +420,10 @@ background-color: var(--main-color);
 
 .feature-list__link:hover,
 .feature-list__link:focus {
-  color: var(--main-color);
-  fill: var(--main-color);
 }
 
 .feature-icon:hover,
 .feature-icon:focus {
-  fill: var(--main-color);
-  color: var(--main-color);
   box-sizing: border-box;
 }
 
@@ -669,6 +665,13 @@ background-color: var(--main-color);
   border-color: var(--main-color);
 }
 
+.client-list__link:hover .client-icon-box,
+.client-list__link .client-icon-box:focus {
+  fill: var(--main-color);
+  box-sizing: border-box;
+  border-color: var(--main-color);
+}
+
 /*===End-Nasi-klienci===*/
 
 /*==portfolio-buttons-section==*/
@@ -711,6 +714,7 @@ background-color: var(--main-color);
 .card-project-set-item:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  cursor: pointer;
 }
 
 .card-project-set-item:nth-child(-n + 6) {
@@ -889,7 +893,6 @@ top: 2751px;*/
 }
 
 .pointer {
-  cursor: url("../images/cursor.png"), auto;
 }
 
 /*===hover-focus===*/
