@@ -447,6 +447,29 @@ background-color: var(--main-color);
   margin-right: 30px;
 }
 
+.galery-figure {
+  margin: 0px;
+  position: relative;
+  display: inline-flex;
+}
+
+.galery-figure figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  width: 100%;
+  height: 70px;
+  padding: 27px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 /*===end-czym-się-zajmujemy===*/
 
 /*===nasz-zespół=== */
