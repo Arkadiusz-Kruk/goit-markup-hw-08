@@ -61,7 +61,7 @@
                 </div>
                 <!--button-->
                 <div class="modal-button-box">
-                    <button class="modal-button" type="button"> <p class="modal-button-text">Zamów usługe</p></button>
+                    <button class="modal-button" type="button" data-modal-open> <p class="modal-button-text">Zamów usługe</p></button>
                 </div>
             </div>
         </section>
@@ -412,5 +412,15 @@
         </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg width="30px" height="30px" class="icon-close">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="modal.js"></script>
 </body>
 </html>

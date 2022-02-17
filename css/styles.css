@@ -147,6 +147,49 @@ img {
 
 /* ====end-buttons====*/
 
+/* ==== backdrop-modal-window ====*/
+
+.backdrop {
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 581px;
+    width: 528px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+}
+
+.close-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: #FFFFFF;
+    cursor:pointer;
+    border: hidden;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* ==== backdrop-modal-window ==== */
+
+
+
+
 /* ========end-components========*/
 
 /* =============header=============*/
