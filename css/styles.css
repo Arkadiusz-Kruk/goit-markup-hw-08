@@ -131,21 +131,24 @@ img {
 .modal-button:hover,
 .modal-button:focus {
   color: #ffffff;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-portfolio:hover,
 .modal-button-portfolio:focus {
   color: var(--main-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-portfolio-active-page-button:hover,
 .modal-button-portfolio-active-page-button:focus {
   color: #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ====end-buttons====*/
@@ -276,7 +279,8 @@ background-color: var(--main-color);
 .adress-list__link-second-header:hover,
 .adress-list__link-second-header:focus {
   fill: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-icon {
@@ -303,7 +307,8 @@ background-color: var(--main-color);
   box-sizing: border-box;
   width: 16px;
   height: 12px;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-icon-second:hover,
@@ -312,7 +317,8 @@ background-color: var(--main-color);
   box-sizing: border-box;
   width: 10px;
   height: 16px;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-list__link-header {
@@ -324,7 +330,8 @@ background-color: var(--main-color);
 .adress-list__link-header:hover,
 .adress-list__link-header:focus {
   fill: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-list__link-second-header {
@@ -387,7 +394,8 @@ background-color: var(--main-color);
 .navigation-list-item-link:hover,
 .navigation-list-item-link:focus {
   color: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-email {
@@ -413,19 +421,22 @@ background-color: var(--main-color);
 .header-phone-number:hover,
 .header-phone-number:focus {
   color: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-list__link-header:hover,
 .adress-list__link-header:focus {
   color: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-list__link-second--header:hover,
 .adress-list__link-second--header:focus {
   color: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*===end-email-phone-number-hover-focus===*/
@@ -523,7 +534,8 @@ background-color: var(--main-color);
 .feature-icon:hover,
 .feature-icon:focus {
   box-sizing: border-box;
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .description {
@@ -657,7 +669,8 @@ background-color: var(--main-color);
 .social-list__link:focus {
   fill: #ffffff;
   background-color: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*===end-nasz-zespół===*/
@@ -769,7 +782,8 @@ background-color: var(--main-color);
   fill: var(--main-color);
   box-sizing: border-box;
   border-color: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-list__link:hover,
@@ -778,8 +792,8 @@ background-color: var(--main-color);
   fill: var(--main-color);
   width: 170px;
   height: 92px;
-
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-gallery-item:hover,
@@ -788,7 +802,8 @@ background-color: var(--main-color);
   width: 170px;
   height: 92px;
   border-color: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-list__link:hover .client-icon-box,
@@ -796,7 +811,8 @@ background-color: var(--main-color);
   fill: var(--main-color);
   box-sizing: border-box;
   border-color: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*===End-Nasi-klienci===*/
@@ -877,7 +893,8 @@ background-color: var(--main-color);
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
   transform: translatey(0);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-project-set-item:nth-child(-n + 6) {
@@ -1048,7 +1065,8 @@ background-color: var(--main-color);
 .social-list__link-footer:focus {
   fill: #ffffff;
   background-color: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-text {
@@ -1088,7 +1106,8 @@ top: 2751px;*/
 .address-email-portfolio:hover,
 .address-email-portfolio:focus {
   color: var(--main-color);
-  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*===end-hover-focus===*/
