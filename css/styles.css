@@ -1164,16 +1164,31 @@ top: 2751px;*/
   line-height: 1.875;
   font-weight: bold;
   letter-spacing: 0.06em;
+  margin-top: 10px;
+  margin-right: 24px;
+  margin-bottom: 10px;
   margin-left: 42px;
+
 }
 .newsletter-btn-text::after {
-  content: url("../images/icon_send.svg");
+  content: "";
   width: 24px;
   height: 24px;
   position: absolute;
-  left: 148px;
   top: 13px;
+  right: 28px;
+  bottom: 13px;
+  left: 148px;
 }
+
+.newsletter-btn-text-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  bottom: 13px;
+  left: 148px;
+}
+
 
 
 icon-icon-send
