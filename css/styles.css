@@ -1043,7 +1043,6 @@ background-color: var(--main-color);
 
 .footer-right-content {
   margin-top: 72px;
-  margin-right: 863px;
   margin-bottom: 100px;
   margin-left: 70px;
 }
@@ -1116,5 +1115,71 @@ top: 2751px;*/
 /*===end-hover-focus===*/
 
 /*===end-address===*/
+
+/*===footer-newsletter===*/
+
+.footer-newsletter-box {
+  margin-top: 72px;
+  margin-bottom: 94px;
+  margin-left: 78px;
+}
+
+.newsletter {
+  display: flex;
+}
+
+.newsletter-input {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: none;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  box-sizing: border-box;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.newsletter-btn {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  background-color: var(--main-color);
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+
+  margin-left: 12px;
+  text-align: left;
+  padding: 0;
+}
+
+.newsletter-btn-text {
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  margin-left: 42px;
+}
+.newsletter-btn-text::after {
+  content: url("../images/icon_send.svg");
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 148px;
+  top: 13px;
+}
+
+
+icon-icon-send
+
+
+/*===end-footer-newsletter===*/
+
 
 /* =============end-footer=============*/
