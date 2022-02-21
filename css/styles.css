@@ -1312,6 +1312,9 @@ textarea {
 
 .user-name-icon {
   background-image: url("../images/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 15px;
+  padding-left: 42px;
 }
 
 .user-name-icon:focus {
@@ -1333,9 +1336,6 @@ textarea {
 .email-icon:focus {
   background-image: url("../images/icon-email-main-color.svg");
 }
-
-
-
 
 /* ======= end-form ======== */
 
