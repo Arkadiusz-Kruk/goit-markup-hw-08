@@ -1310,6 +1310,7 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/*
 .user-name-icon {
   background-image: url("../images/icon-user.svg");
   background-repeat: no-repeat;
@@ -1336,6 +1337,10 @@ textarea {
 .email-icon:focus {
   background-image: url("../images/icon-email-main-color.svg");
 }
+
+*/
+
+
 
 /* ======= end-form ======== */
 
