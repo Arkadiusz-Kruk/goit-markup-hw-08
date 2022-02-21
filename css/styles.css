@@ -1278,15 +1278,22 @@ textarea {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1, 714;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   text-align: left;
   color: #757575;
 }
 
-accent {
+.accento {
   color: var(--main-color);
-  text-decoration: underline;
+  display: inline;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 
 .button {
@@ -1302,6 +1309,33 @@ accent {
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+.user-name-icon {
+  background-image: url("../images/icon-user.svg");
+}
+
+.user-name-icon:focus {
+  background-image: url("../images/icon-user-main-color.svg");
+}
+
+.tel-icon {
+  background-image: url("../images/icon-tel.svg");
+}
+
+.tel-icon:focus {
+  background-image: url("../images/icon-tel-main-color.svg");
+}
+
+.email-icon {
+  background-image: url("../images/icon-email.svg");
+}
+
+.email-icon:focus {
+  background-image: url("../images/icon-email-main-color.svg");
+}
+
+
+
 
 /* ======= end-form ======== */
 
