@@ -2,6 +2,23 @@
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --main-color: #2196f3;
+
+  --color-primary: #212121;
+  --color-primary-opacity: rgba(33, 33, 33, 0.2);
+  --color-secondary: #757575;
+  --color-secondary-opacity: rgba(117, 117, 117, 0.5);
+  --color-accent: #2196f3;
+  --color-bg-dark: #2f303a;
+  --color-bg-dark-opacity: rgba(47, 48, 58, 0.8);
+  --color-bg-light: #f5f4fa;
+  --color-socials: #afb1b8;
+
+  --font-12: 12px;
+  --font-14: 14px;
+
+  --l-spacing-01: 0.01em;
+
+  --gap-12: 12px;
 }
 
 body {
@@ -1191,6 +1208,79 @@ top: 2751px;*/
 
 /* ======== form ========== */
 
+.modal-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-wrapper {
+  padding: 40px;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrapper h3 {
+  text-align: center;
+  padding-bottom: var(--gap-12);
+}
+
+.form-label textarea {
+  color: var(--color-secondary-opacity);
+  padding: 12px 16px;
+  resize: none;
+  height: 120px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  padding-bottom: 4px;
+  color: var(--color-secondary);
+  font-size: var(--font-12);
+  line-height: var(--font-14);
+  letter-spacing: var(--l-spacing-01);
+}
+
+.label-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.form-input {
+  height: 40px;
+  width: 100%;
+  padding-left: 42px;
+}
+
+.label-wrapper svg {
+  position: absolute;
+  fill: var(--color-bg-dark);
+  margin-left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-wrapper input,
+.form-label textarea {
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid var(--color-primary-opacity);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-wrapper input:focus,
+.form-label textarea:focus {
+  border: 1px solid var(--color-accent);
+}
+
+.label-wrapper input:focus + svg {
+  fill: var(--color-accent);
+}
+
 .form-name {
   position: absolute;
   display: block;
@@ -1221,6 +1311,7 @@ top: 2751px;*/
   margin-bottom: 10px;
 }
 
+/*
 label {
   display: flex;
   flex-direction: column;
@@ -1246,6 +1337,8 @@ textarea {
   color: #757575;
   margin-bottom: 20px;
 }
+
+/*
 
 .modal ::placeholder {
   font-family: Roboto;
@@ -1296,6 +1389,7 @@ textarea {
   text-align: left;
 }
 
+*/
 .button {
   display: block;
   bottom: 40px;
@@ -1308,6 +1402,100 @@ textarea {
   background-color: var(--main-color);
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*
+
+.label-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.label-wrapper svg {
+  position: absolute;
+  fill: var(--color-bg-dark);
+  margin-left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*
+.label-wrapper input,
+.form-label textarea {
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid var(--color-primary-opacity);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*/
+
+.policy-wrapper {
+  display: flex;
+}
+
+.policy {
+  cursor: pointer;
+  display: flex;
+}
+
+.policy a {
+  text-decoration: underline;
+  color: var(--color-accent);
+}
+
+.policy a:hover,
+.policy a:focus {
+  opacity: 0.8;
+}
+
+.policy input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  height: 16px;
+  width: 15px;
+  border: 1px solid var(--color-bg-dark);
+  border-radius: 2px;
+  background-color: #eee;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.policy:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.policy input:checked ~ .checkmark {
+  background-color: var(--color-accent);
+  border: none;
+}
+
+.checkmark-svg {
+  display: none;
+  opacity: 0;
+}
+
+.policy input:checked ~ .checkmark .checkmark-svg {
+  display: block;
+  opacity: 1;
+}
+
+.policy-wrapper .policy-text {
+  margin: 0 5px;
+}
+
+.policy-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 /*
@@ -1339,8 +1527,6 @@ textarea {
 }
 
 */
-
-
 
 /* ======= end-form ======== */
 
