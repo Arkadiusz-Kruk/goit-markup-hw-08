@@ -1159,6 +1159,7 @@ top: 2751px;*/
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+
 .modal {
   position: absolute;
   top: 50%;
@@ -1174,6 +1175,7 @@ top: 2751px;*/
   animation: animateModal 1000ms 1000ms;
   transform-origin: center center;
   transform: translate(-50%, -50%);
+  animation-iteration-count: 1;
 }
 
 @keyframes animateModal {
@@ -1185,6 +1187,7 @@ top: 2751px;*/
     transform: translate(-50%, -50%) scale(1) rotate3d(0, 0, 1, 720deg);
   }
 }
+
 
 .close-btn {
   position: absolute;
