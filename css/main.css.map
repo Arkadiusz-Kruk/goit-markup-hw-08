@@ -1,0 +1,30 @@
+{
+    "version": 3,
+    "mappings": "AMAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,gBAAgB;CAC9B;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE;AACF,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;CACV;;AAED,AAAA,CAAC;AACD,EAAE,CAAC;EACD,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAK;CACf",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/utils/_mixins.scss",
+        "../sass/utils/_visually-hidden.scss",
+        "../sass/vendors/_normalize.scss",
+        "../sass/base/_animations.scss",
+        "../sass/base/_common.scss",
+        "../sass/base/_container.scss",
+        "../sass/base/_section.scss",
+        "../sass/base/_social-icon.scss",
+        "../sass/layout/_navigation.scss",
+        "../sass/layout/_hero-section.scss",
+        "../sass/layout/_about-us-section.scss",
+        "../sass/layout/_team-section.scss",
+        "../sass/layout/_clients-section.scss",
+        "../sass/layout/_footer.scss",
+        "../sass/layout/_portfolio-section.scss",
+        "../sass/components/_buttons.scss",
+        "../sass/components/_logo.scss",
+        "../sass/components/_active-pages.scss",
+        "../sass/components/_modal-window.scss",
+        "../sass/components/_newsletter.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
