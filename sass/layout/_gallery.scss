@@ -1,21 +1,21 @@
-/*===czym-się-zajmujemy===*/
+.gallery {
 
-.gallery__list {
+  &__list {
   display: flex;
   margin-top: 50px;
-}
+  }
 
-.gallery__list-item:not(:last-child) {
+  &__list-item:not(:last-child) {
   margin-right: 30px;
-}
+  }
 
-.gallery__figure {
+  &__figure {
   margin: 0px;
   position: relative;
   display: inline-flex;
-}
+  }
 
-.gallery__figure figcaption {
+  &__figure figcaption {
   position: absolute;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
@@ -31,5 +31,5 @@
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  }
 }
-/*===end-czym-się-zajmujemy===*/

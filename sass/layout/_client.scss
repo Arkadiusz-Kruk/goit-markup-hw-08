@@ -1,29 +1,74 @@
-/*===Nasi-klienci===*/
+.client {
+  &__icon-list {
+    display: flex;
+    flex-wrap: wrap; /*sprawdz może usun*/
+    justify-content: center;
+    margin-top: 50px;
+  }
 
-.client__icon-list {
-  display: flex;
-  flex-wrap: wrap; /*sprawdz może usun*/
-  justify-content: center;
-  margin-top: 50px;
-}
+  &__gallery-item:not(:last-child) {
+    margin-right: 30px;
+  }
 
-.client__gallery-item:not(:last-child) {
-  margin-right: 30px;
-}
+  &__gallery-item {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
-.client__gallery-item {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
+  &__icon-box {
+    width: 170px;
+    height: 92px;
+    box-sizing: border-box;
+  }
 
-.client__icon-box {
-  width: 170px;
-  height: 92px;
+  &__list-link {
+    display: inline-flex;
+    width: 170px;
+    height: 92px;
+    border-color: var(--main-color);
+    fill: var(--main-color);
+  }
 
-  box-sizing: border-box;
+  &__icon-box:hover,
+  &__icon-box:focus {
+    fill: var(--main-color);
+    box-sizing: border-box;
+    border-color: var(--main-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__list-link:hover,
+  &__list-link:focus {
+    color: var(--main-color);
+    fill: var(--main-color);
+    width: 170px;
+    height: 92px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__gallery-item:hover,
+  &__gallery-item:focus {
+    color: var(--main-color);
+    width: 170px;
+    height: 92px;
+    border-color: var(--main-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__list-link:hover &__icon-box,
+  &__list-link:focus &__icon-box {
+    fill: var(--main-color);
+    box-sizing: border-box;
+    border-color: var(--main-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .client-icon-1 {
@@ -91,51 +136,3 @@
   margin-bottom: 25.31px;
   margin-left: 38px;
 }
-
-.client__list-link {
-  display: inline-flex;
-  width: 170px;
-  height: 92px;
-  border-color: var(--main-color);
-  fill: var(--main-color);
-}
-
-.client__icon-box:hover,
-.client__icon-box:focus {
-  fill: var(--main-color);
-  box-sizing: border-box;
-  border-color: var(--main-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client__list-link:hover,
-.client__list-link:focus {
-  color: var(--main-color);
-  fill: var(--main-color);
-  width: 170px;
-  height: 92px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client__gallery-item:hover,
-.client__gallery-item:focus {
-  color: var(--main-color);
-  width: 170px;
-  height: 92px;
-  border-color: var(--main-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client__list-link:hover .client__icon-box,
-.client__list-link:focus .client__icon-box {
-  fill: var(--main-color);
-  box-sizing: border-box;
-  border-color: var(--main-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/*===End-Nasi-klienci===*/
