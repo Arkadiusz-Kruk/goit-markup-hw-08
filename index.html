@@ -418,10 +418,10 @@
             <p class="footer__social-text">ZAPISZ SIĘ DO NEWSLETTERA</p>
             <form action="" class="newsletter">
                 <label for="newsletter">
-                    <input type="email" class="newsletter-input" id="newsletter" placeholder="E-mail">
+                    <input type="email" class="newsletter__input" id="newsletter" placeholder="E-mail">
                 </label>
-                <button type="submit" class="newsletter-btn"><span class="newsletter-btn-text">Zapisz się</span>
-                <svg width="24px" height="24px" class="newsletter-btn-text-icon">
+                <button type="submit" class="newsletter__btn"><span class="newsletter__btn-text">Zapisz się</span>
+                <svg width="24px" height="24px" class="newsletter__btn-text-icon">
                     <use href="./images/sprite.svg#icon-icon-send"></use>
                 </svg>
                 </button>
@@ -432,60 +432,60 @@
     <!--backdrop-modal-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal" data-modal-window>
-            <button type="button" class="close-btn" data-modal-close>
-                <svg width="30px" height="30px" class="icon-close">
+            <button type="button" class="modal__close-btn" data-modal-close>
+                <svg width="30px" height="30px" class="modal__icon-close">
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
 
 
 
-            <form class="modal-form" action="">
-                <div class="form-wrapper">
+            <form class="modal__form" action="">
+                <div class="modal__form-wrapper">
                     <h3>Zostaw swoje dane w formularzu poniżej</h3>
             
-                    <label class="form-label" for="imie">Imie
-                        <div class="label-wrapper">
-                            <input class="form-input" type="text" required name="imie" id="imie" />
+                    <label class="modal__form-label" for="imie">Imie
+                        <div class="modal__label-wrapper">
+                            <input class="modal__form-input" type="text" required name="imie" id="imie" />
                             <svg width="18" height="18">
                                 <use href="images/sprite.svg#icon-person" width="18" height="18"></use>
                             </svg>
                         </div>
                     </label>
             
-                    <label class="form-label" for="tel">Telefon
-                        <div class="label-wrapper">
-                            <input class="form-input" type="tel" required name="tel" id="tel" />
+                    <label class="modal__form-label" for="tel">Telefon
+                        <div class="modal__label-wrapper">
+                            <input class="modal__form-input" type="tel" required name="tel" id="tel" />
                             <svg width="18" height="18">
                                 <use href="images/sprite.svg#icon-phone-black" width="18" height="18"></use>
                             </svg>
                         </div>
                     </label>
             
-                    <label class="form-label" for="mail">Email
-                        <div class="label-wrapper">
-                            <input class="form-input" type="email" required name="email" id="mail" />
-                            <svg class="form-svg" width="18" height="18">
+                    <label class="modal__form-label" for="mail">Email
+                        <div class="modal__label-wrapper">
+                            <input class="modal__form-input" type="email" required name="email" id="mail" />
+                            <svg width="18" height="18">
                                 <use href="images/sprite.svg#icon-email-black" width="18" height="18"></use>
                             </svg>
                         </div>
                     </label>
             
-                    <label class="form-label" for="comment">Komentarz
+                    <label class="modal__form-label" for="comment">Komentarz
                         <textarea name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
                     </label>
-                    <div class="policy-wrapper">
-                        <label class="policy" for="policy">
-                            <input class="policy" type="checkbox" unchecked required name="policy" id="policy" />
-                            <span class="checkmark">
-                                <svg class="checkmark-svg" width="15" height="16">
+                    <div class="modal__policy-wrapper">
+                        <label class="modal__policy" for="policy">
+                            <input class="modal__policy" type="checkbox" unchecked required name="policy" id="policy" />
+                            <span class="modal__checkmark">
+                                <svg class="modal__checkmark-svg" width="15" height="16">
                                     <use href="images/sprite.svg#icon-checkbox" width="15" height="16"></use>
                                 </svg>
                             </span>
-                            <span class="policy-text">Oświadczam iż akceptuję </span>
-                            <a class="policy-text" href="#">Regulamin</a>
-                            <span class="policy-text">i</span>
-                            <a class="policy-text href="#">Politykę Prywatności.</a>
+                            <span class="modal__policy-text">Oświadczam iż akceptuję </span>
+                            <a class="modal__policy-text" href="#">Regulamin</a>
+                            <span class="modal__policy-text">i</span>
+                            <a class="modal__policy-text href="#">Politykę Prywatności.</a>
                         </label>
                     </div>
             
