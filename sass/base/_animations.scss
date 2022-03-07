@@ -1,0 +1,9 @@
+@keyframes animateModal {
+  0% {
+    transform: translate(-50%, -50%) scale(0) rotate3d(0, 0, 1, 0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate3d(0, 0, 1, 720deg);
+  }
+}

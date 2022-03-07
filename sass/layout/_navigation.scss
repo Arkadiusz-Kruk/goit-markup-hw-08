@@ -1,0 +1,30 @@
+.navigation__list {
+  display: flex;
+}
+
+.navigation__list-item {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+
+.navigation__list-item:not(:last-child) {
+  margin-right: 46px;
+}
+
+.navigation__list-item-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+
+.navigation__list-item-link:hover,
+.navigation__list-item-link:focus {
+  color: var(--main-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

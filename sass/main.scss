@@ -1,8 +1,4 @@
 @import "utils/variables";
-@import "utils/mixins";
-@import "utils/visually-hidden";
-
-@import "vendors/normalize";
 
 @import "base/animations";
 @import "base/common";
@@ -11,12 +7,14 @@
 @import "base/social-icon";
 
 @import "layout/navigation";
-@import "layout/hero-section";
-@import "layout/about-us-section";
-@import "layout/team-section";
-@import "layout/clients-section";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/lorem-ipsum";
+@import "layout/team";
+@import "layout/gallery";
+@import "layout/client";
 @import "layout/footer";
-@import "layout/portfolio-section";
+@import "layout/portfolio";
 
 @import "components/buttons";
 @import "components/logo";

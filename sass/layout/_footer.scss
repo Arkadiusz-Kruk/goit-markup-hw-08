@@ -1,0 +1,91 @@
+/*=============footer=============*/
+
+.footer__background-color {
+  background: #2f303a;
+  display: flex;
+}
+
+/*===address===*/
+
+.footer__background-color {
+}
+
+.main-box {
+  display: flex;
+}
+
+.footer__address {
+  font-style: normal;
+}
+
+.footer__address-postal {
+  margin-bottom: 9px;
+}
+
+
+
+.footer__address-box {
+  padding-bottom: 60px;
+}
+
+.footer__address-email {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.footer__address-email-portfolio {
+  display: inline-block;
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+
+.footer__address-postal,
+.footer__address-email,
+.footer__address-phone-number {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.footer__address-postal {
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.footer__address-email,
+.footer__address-phone-number,
+.footer__address-email-portfolio {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*==Dołącz do nas==*/
+
+.footer__right-content {
+  margin-top: 72px;
+  margin-bottom: 100px;
+  margin-left: 70px;
+}
+
+/*===hover-focus===*/
+
+.footer__address-postal:hover,
+.footer__address-postal:focus,
+.footer__address-email:hover,
+.footer__address-email:focus,
+.footer__address-phone-number:hover,
+.footer__address-phone-number:focus,
+.footer__address-email-portfolio:hover,
+.footer__address-email-portfolio:focus {
+  color: var(--main-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*===end-hover-focus===*/
+
+/*===end-address===*/
+
+/* =============end-footer=============*/
