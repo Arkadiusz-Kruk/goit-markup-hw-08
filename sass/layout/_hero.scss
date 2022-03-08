@@ -9,24 +9,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%, 50%;
-}
 
-.hero__background-box {
+  &__background-box {
   display: flex;
   flex-direction: column;
   /*justify-content: center;
     text-align: center; */
-}
+  }
 
-.hero__main-header-box {
+  &__main-header-box {
   display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 200px;
   margin-bottom: 30px;
-}
+  }
 
-.hero__main {
+  &__main {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;
@@ -34,4 +33,5 @@
   text-transform: uppercase;
   color: #ffffff;
   width: 696px;
+  }
 }

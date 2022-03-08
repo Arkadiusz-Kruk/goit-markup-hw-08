@@ -1,24 +1,24 @@
-/*===projects===*/
+.portfolio {
 
-.portfolio__card-project-set {
+  &__card-project-set {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
-}
+  }
 
-.portfolio__services-gallery-picture {
+  &__services-gallery-picture {
   background: #ffffff;
   margin: 0 30px 0 0;
-}
+  }
 
-.portfolio__services-gallery-description {
+  &__services-gallery-description {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   max-width: 370px;
-}
+  }
 
-.portfolio__project-name {
+  &__project-name {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -27,9 +27,9 @@
   padding-right: 24px;
   margin-bottom: 4px;
   padding-left: 24px;
-}
+  }
 
-.portfolio__project-type {
+  &__project-type {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
@@ -37,52 +37,47 @@
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-}
+  }
 
-.portfolio__card-project-set-item {
+  &__card-project-set-item {
   position: relative;
   overflow: hidden;
-}
+  }
 
-.portfolio__card-project-set-item:hover {
+  &__card-project-set-item:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   cursor: pointer;
   transform: translatey(0);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.portfolio__card-project-set-item:nth-child(-n + 6) {
+  &__card-project-set-item:nth-child(-n + 6) {
   margin-bottom: 30px;
-}
+  }
 
-.portfolio__card-project-set-item:hover .portfolio__overlay {
+  &__card-project-set-item:hover .portfolio__overlay {
   transform: translatey(0);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.portfolio__overlay {
+  &__overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 370px;
   height: 294px;
-
   transform: translateY(140%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio__overlay > p {
+    & p {
   margin: 0;
-
   background-color: rgba(33, 150, 243, 0.9);
   width: 370px;
   height: 294px;
   position: absolute;
-
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -91,11 +86,10 @@
   color: #ffffff;
   display: flex;
   align-items: center;
-
   padding-top: 49px;
   padding-right: 45px;
   padding-bottom: 49px;
   padding-left: 24px;
+    }
+  }
 }
-
-/* ===end-projects=== */

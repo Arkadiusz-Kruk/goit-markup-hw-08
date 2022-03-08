@@ -2,9 +2,8 @@
   margin-top: 24px;
   margin-right: 93px;
   margin-bottom: 25px;
-}
 
-.logo_link {
+  &__link {
   font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
@@ -12,10 +11,11 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--main-color);
-}
+  }
 
-.logo_link-header-black-color {
+  &__link-header-black-color {
   color: #000000;
+  }
 }
 
 .footer__logo-box {

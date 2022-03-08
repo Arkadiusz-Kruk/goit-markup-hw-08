@@ -36,6 +36,7 @@
   margin-bottom: 10px;
   margin-left: 42px;
 }
+
 .newsletter__btn-text::after {
   content: "";
   width: 24px;
@@ -138,11 +139,8 @@
 }
 
 .portfolio__box-buttons-list {
-  /*display: inline-flex;
-    justify-self: start; */
   display: flex;
   justify-content: center;
-  /*justify-content:center; /* czy to dobrze*/
 }
 
 .filters .container {
@@ -151,7 +149,6 @@
 }
 
 .portfolio__box-buttons-list li:not(:last-child) {
-  margin-right: 8px; /*sprawdz*/
+  margin-right: 8px; 
 }
-
 /*==end-portfolio-buttons-section==*/
