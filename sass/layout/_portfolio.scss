@@ -42,25 +42,19 @@
   &__card-project-set-item {
   position: relative;
   overflow: hidden;
-  }
 
-  &__card-project-set-item:hover {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
-    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  cursor: pointer;
-  transform: translatey(0);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+    :nth-child(-n + 6) {
+      margin-bottom: 30px;
+      }
 
-  &__card-project-set-item:nth-child(-n + 6) {
-  margin-bottom: 30px;
-  }
-
-  &__card-project-set-item:hover .portfolio__overlay {
-  transform: translatey(0);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    :hover {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+      drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      cursor: pointer;
+      transform: translatey(0);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
   }
 
   &__overlay {
@@ -90,6 +84,12 @@
   padding-right: 45px;
   padding-bottom: 49px;
   padding-left: 24px;
+    }
+
+    &__card-project-set-item:hover
+      transform: translatey(0);
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }

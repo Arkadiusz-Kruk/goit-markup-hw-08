@@ -8,11 +8,10 @@
   margin-top: 32px;
   margin-bottom: 32px;
   position: relative;
-  }
 
-
-  &__list-item:not(:last-child) {
-  margin-right: 46px;
+    :not(:last-child) {
+    margin-right: 46px;
+    }
   }
 
   &__list-item-link {

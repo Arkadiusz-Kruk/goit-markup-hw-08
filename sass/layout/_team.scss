@@ -16,10 +16,12 @@
   margin: 0;
   }
 
-  &__gallery-item:not(:last-child) {
-  margin-right: 30px;
+  &__gallery-item {
+    :not(:last-child) {
+    margin-right: 30px;
+    }  
   }
-
+  
   &__first-name-last-name {
   font-weight: 500;
   font-size: 16px;

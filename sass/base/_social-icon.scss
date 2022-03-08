@@ -27,8 +27,10 @@
   margin-bottom: 30px;
 }
 
-.team__social-list-item:not(:last-child) {
-  margin-right: 10px;
+.team__social-list-item {
+  :not(:last-child) {
+    margin-right: 10px;
+    }
 }
 
 .team__social-list-link:hover,
