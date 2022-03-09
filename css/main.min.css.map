@@ -20,6 +20,7 @@
         "../sass/layout/_portfolio.scss",
         "../sass/components/_buttons.scss",
         "../sass/components/_logo.scss",
+        "../sass/components/_menu.scss",
         "../sass/components/_active-pages.scss",
         "../sass/components/_modal-window.scss",
         "../sass/components/_newsletter.scss"
