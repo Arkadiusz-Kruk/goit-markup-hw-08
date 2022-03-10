@@ -1,32 +1,29 @@
 .navigation {
-
-  &__list {
-  display: flex;
+  border-bottom: 1px solid $border-color;
+  background-color: $white-color;
+  height: 60px;
+  &__wrapper {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
   }
-
-  &__list-item {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  position: relative;
-
-    :not(:last-child) {
-    margin-right: 46px;
+  &__items {
+    display: none;
+  }
+  &__burger {
+    padding: 12px 8px;
+    border: none;
+    background-color: transparent;
+    transition: fill $main-transition;
+    &-icon {
+      fill: $dark-text-color;
+      width: 24px;
+      height: 16px;
     }
-  }
-
-  &__list-item-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: #212121;
-  }
-
-  &__list-item-link:hover,
-  &__list-item-link:focus {
-  color: var(--main-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover &-icon,
+    &:focus &-icon {
+      fill: $main-color;
+    }
   }
 }

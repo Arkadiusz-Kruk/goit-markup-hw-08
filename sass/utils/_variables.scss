@@ -1,24 +1,5 @@
-:root {
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
-  --main-color: #2196f3;
-
-  --color-primary: #212121;
-  --color-primary-opacity: rgba(33, 33, 33, 0.2);
-  --color-secondary: #757575;
-  --color-secondary-opacity: rgba(117, 117, 117, 0.5);
-  --color-accent: #2196f3;
-  --color-bg-dark: #2f303a;
-  --color-bg-dark-opacity: rgba(47, 48, 58, 0.8);
-  --color-bg-light: #f5f4fa;
-  --color-socials: #afb1b8;
-
-  --font-12: 12px;
-  --font-14: 14px;
-
-  --l-spacing-01: 0.01em;
-
-  --gap-12: 12px;
+$fontFamilyBody: "Roboto", sans-serif;
+$fontFamilyLogo: "Raleway", sans-serif;
 
 // colors
 $main-color: #2196f3;
@@ -44,9 +25,8 @@ $modal-window-shodow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 $filter-btn-shodow: 0px 3px 1px rgba(0, 0, 0, 0.1),
   0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-$portfolio-card-shodow:0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  $portfolio-card-shodow:0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
 //transition
 $main-transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}

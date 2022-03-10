@@ -1,38 +1,16 @@
 .logo {
-  margin-top: 24px;
-  margin-right: 93px;
-  margin-bottom: 25px;
-
-  &__link {
-  font-family: var(--secondary-font);
+  font-family: $fontFamilyLogo;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.192;
   letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--main-color);
-  }
-
-  &__link-header-black-color {
-  color: #000000;
-  }
+  
 }
-
-.footer__logo-box {
-  padding-top: 60px;
-  margin-bottom: 20px;
+.logo__item {
+  color: $main-color;
 }
-
-.footer__logo-link {
-  font-family: var(--secondary-font);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--main-color);
+.logo--dark{
+    color: $dark-text-color;
 }
-
-.footer__logo-link-white-color {
-  color: #ffffff;
+.logo--light{
+    color: $white-color;
 }

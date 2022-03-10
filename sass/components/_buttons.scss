@@ -1,154 +1,24 @@
-.button {
-  display: block;
-  bottom: 40px;
-  margin: 0 auto;
-  margin-top: 30px;
-  height: 50px;
-  width: 200px;
-  border-radius: 4px;
-  border: hidden;
-  background-color: var(--main-color);
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.newsletter__btn {
-  position: relative;
-  width: 200px;
-  height: 50px;
-  background-color: var(--main-color);
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  margin-left: 12px;
-  text-align: left;
-  padding: 0;
-}
-
-.newsletter__btn-text {
-  font-size: 16px;
-  line-height: 1.875;
-  font-weight: bold;
-  letter-spacing: 0.06em;
-  margin-top: 10px;
-  margin-right: 24px;
-  margin-bottom: 10px;
-  margin-left: 42px;
-}
-
-.newsletter__btn-text::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 13px;
-  right: 28px;
-  bottom: 13px;
-  left: 148px;
-}
-
-.newsletter__btn-text-icon {
-  position: absolute;
-  top: 13px;
-  right: 28px;
-  bottom: 13px;
-  left: 148px;
-}
-
-.modal__close-btn {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-  background-color: #ffffff;
-  cursor: pointer;
-  border: hidden;
-}
-
-.hero__modal-button-box {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 200px;
-}
-
-.hero__modal-button {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  background: var(--main-color);
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 0;
-}
-
-.hero__modal-button-text {
-  padding-top: 10px;
-  padding-right: 41px;
-  padding-bottom: 10px;
-  padding-left: 42px;
-}
-
-.portfolio__modal-button {
+  .btn {
+  font-family: $fontFamilyBody;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.625;
   text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  background: #f5f4fa;
-  color: #212121;
+  border: none;
   border-radius: 4px;
-  border: 0;
-  padding: 0;
+  cursor: pointer;
+  letter-spacing: 0.06em;
 }
 
-.portfolio__modal-button-text {
-  padding-top: 6px;
-  padding-right: 22px;
-  padding-bottom: 6px;
-  padding-left: 22px;
+.btn--main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: $main-color;
+  box-shadow: $btn-shodow;
+  color: $white-color;
 }
-
-/*hoover-button*/
-
-.hero__modal-button:hover,
-.hero__modal-button:focus {
-  color: #ffffff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.btn--filter {
+  padding: 6px 22px;
+  background-color: $light-bg-color;
+  color: $dark-text-color;
+  letter-spacing: 0.03em;
 }
-
-.portfolio__modal-button:hover,
-.portfolio__modal-button:focus {
-  color: var(--main-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/*==portfolio-buttons-section==*/
-
-.portfolio__box-buttons {
-  margin-bottom: 50px;
-}
-
-.portfolio__box-buttons-list {
-  display: flex;
-  justify-content: center;
-}
-
-.filters .container {
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio__box-buttons-list li:not(:last-child) {
-  margin-right: 8px; 
-}
-/*==end-portfolio-buttons-section==*/

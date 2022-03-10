@@ -1,86 +1,45 @@
+   
 .footer {
-
-  &__background-color {
-  background: #2f303a;
-  display: flex;
+  background-color: $dark-bg-color;
+  &__boxes {
+    padding: 60px 0;
+    text-align: center;
+  }
+  &__box-address {
+    color: $white-color;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    display: flex;
+    flex-direction: column;
+     p {
+      padding-top: 20px;
+    }
+    &-link {
+      padding-top: 16px;
+      color: $main-footer-color;
+      transition: color $main-transition;
+      &:hover,
+      &:focus {
+        color: $main-color;
+      }
+    }
   }
 
-/*===address===*/
-
-  &__address {
-  font-style: normal;
+  &__header {
+    padding-top: 60px;
+    color: $white-color;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
-
-  &__address-postal {
-  margin-bottom: 9px;
+  &__box-middle{
+    margin: 0 auto;
+    width: 216px;
   }
-
-  &__address-box {
-  padding-bottom: 60px;
+  &__social-icon-wrapper {
+    display: flex;
+    padding-top: 20px;
   }
-
-  &__address-email {
-  display: inline-block;
-  margin-bottom: 9px;
-  }
-
-  &__address-email-portfolio {
-  display: inline-block;
-  margin-bottom: 9px;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  }
-
-  &__address-postal,
-  &__address-email,
-  &__address-phone-number {
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  }
-
-  &__address-postal {
-  color: #ffffff;
-  white-space: nowrap;
-  }
-
-  &__address-email,
-  &__address-phone-number,
-  &__address-email-portfolio {
-  color: rgba(255, 255, 255, 0.6);
-  }
-
-/*==Dołącz do nas==*/
-
-  &__right-content {
-  margin-top: 72px;
-  margin-bottom: 100px;
-  margin-left: 70px;
-  }
-
-/*===hover-focus===*/
-
-  &__address-postal:hover,
-  &__address-postal:focus,
-  &__address-email:hover,
-  &__address-email:focus,
-  &__address-phone-number:hover,
-  &__address-phone-number:focus,
-  &__address-email-portfolio:hover,
-  &__address-email-portfolio:focus {
-  color: var(--main-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-/*===end-hover-focus===*/
-
-/*===end-address===*/
-
-/* =============end-footer=============*/
-}
-
-.main-box {
-  display: flex;
 }

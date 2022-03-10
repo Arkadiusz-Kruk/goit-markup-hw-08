@@ -1,88 +1,42 @@
-.team__social-icon {
+.social-icon {
   width: 20px;
   height: 20px;
+  transition: fill $main-transition;
+}
+.social-icon--dark {
+  fill: $social-icon-color;
+}
+.social-icon--light {
+  fill: $white-color;
 }
 
-.footer__social-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.team__social-list {
-  display: flex;
-  align-items: center;
-  /*justify-content: space-between; */
-  margin-left: 32px;
-  margin-right: 32px;
-}
-
-.team__social-list-link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  fill: #afb1b8;
-  margin-bottom: 30px;
-}
-
-.team__social-list-item {
-  :not(:last-child) {
-    margin-right: 10px;
-    }
-}
-
-.team__social-list-link:hover,
-.team__social-list-link:focus {
-  fill: #ffffff;
-  background-color: var(--main-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__social-list {
-  display: flex;
-}
-
-.footer__social-list-link {
-  display: flex;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-  fill: #ffffff;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer__social-list-link:hover,
-.footer__social-list-link:focus {
-  fill: #ffffff;
-  background-color: var(--main-color);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer__social-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding-bottom: 20px;
-}
-
-.footer__social-list {
-  display: flex;
-  align-items: center;
-  /*justify-content: space-between; */
-}
-
-.footer__social-list-item:not(:last-child) {
+.elipse-icon {
   margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color $main-transition;
+}
+.elipse-icon:hover,
+.elipse-icon:focus {
+  background-color: $main-color;
+}
+.elipse-icon:hover .social-icon,
+.elipse-icon:focus .social-icon {
+  fill: $white-color;
+}
+.elipse-icon--dark {
+  background-color: $elipse-dark-color;
+}
+
+.social-line::after{
+content:"";
+height: 22px;
+width: 1px;
+border:1px solid $social-line ;
+margin-left: 10px;
 }

@@ -1,55 +1,16 @@
-.portfolio__modal-button-active-page-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  background: var(--main-color);
-  color: #ffffff;
-  border: 0;
-  border-radius: 4px;
-  padding: 0;
+.active-page {
+  position: relative;
 }
-
-.portfolio__modal-button-active-page-button:hover,
-.portfolio__modal-button-active-page-button:focus {
-  color: #ffffff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation__list-item-link-actual-page,
-.navigation__list-item-link-actual-page-potrfolio {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--main-color);
-}
-
-.navigation__list-item-link-actual-page-potrfolio::before {
+.active-page::after {
   content: "";
-  display: flex;
-  background-color: var(--main-color);
-  border-radius: 2px;
   position: absolute;
-  width: 58px;
+  bottom: -32px;
+  left: 0;
+  background-color: $main-color;
+  border-radius: 2px;
   height: 4px;
-  left: 0px;
-  top: 46px;
+  width: 100%;
 }
-
-.navigation__list-item-link-actual-page::before {
-  content: "";
-  display: flex;
-  background-color: var(--main-color);
-  border-radius: 2px;
-  position: absolute;
-  width: 53px;
-  height: 4px;
-  left: 0px;
-  top: 46px;
+.active-page-menu{
+  color: $main-color !important;
 }
