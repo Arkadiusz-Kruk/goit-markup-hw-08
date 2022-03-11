@@ -575,6 +575,19 @@ a {
   }
 }
 
+@media (max-width: 768px) {
+  .modal__form-textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+}
+
 @media (max-width: 1200px) {
   .modal__form-textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
