@@ -77,8 +77,10 @@
       transition: outline $main-transition, box-shadow $main-transition;
     }
     &-input:focus {
-      outline: 1px solid $main-color;
-      box-shadow: $modal-window-shodow;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid #2196f3;
+      transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &-textarea {
       padding: 12px 16px;
@@ -88,6 +90,8 @@
     }
     &-textarea::placeholder {
       color: rgba(117, 117, 117, 0.5);
+
+    
     }
     &-btn {
       margin: 30px auto 0;
@@ -108,9 +112,10 @@
     &::before {
       position: absolute;
       left: 0;
-      content: '';
-      width: 14px;
-      height: 13px;
+      content: "";
+      width: 16px;
+      height: 15px;
+      margin-top: 2px;
       outline: 1px solid $dark-text-color;
       border-radius: 2px;
       transition: outline $main-transition, background-color $main-transition;
@@ -118,36 +123,35 @@
   }
   &__policy-box {
     position: relative;
-    padding-top: 25px;
+    padding-top: 20px;
+    margin: auto;
   }
+
   &__checkbox-policy_declaration:checked + &__policy-declaration::before {
     background-color: $main-color;
     outline: none;
-    background-image: url('../images/svg/icon-check.svg');
+    background-image: url("../images/svg/icon-check.svg");
     background-repeat: no-repeat;
     background-position: center center;
-  }
-  &__checkbox-policy_declaration:focus + &__policy-declaration::before {
-    outline: 1px solid $main-color;
   }
 }
 
 .user-name-icon {
-  background-image: url('../images/svg/icon-user.svg');
+  background-image: url("../images/svg/icon-user.svg");
 }
 .user-name-icon:focus {
-  background-image: url('../images/svg/icon-user-main-color.svg');
+  background-image: url("../images/svg/icon-user-main-color.svg");
 }
 
 .tel-icon {
-  background-image: url('../images/svg/icon-tel.svg');
+  background-image: url("../images/svg/icon-tel.svg");
 }
 .tel-icon:focus {
-  background-image: url('../images/svg/icon-tel-main-color.svg');
+  background-image: url("../images/svg/icon-tel-main-color.svg");
 }
 .email-icon {
-  background-image: url('../images/svg/icon-email.svg');
+  background-image: url("../images/svg/icon-email.svg");
 }
 .email-icon:focus {
-  background-image: url('../images/svg/icon-email-main-color.svg');
+  background-image: url("../images/svg/icon-email-main-color.svg");
 }

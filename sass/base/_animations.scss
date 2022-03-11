@@ -7,3 +7,12 @@
     transform: translate(-50%, -50%) scale(1) rotate3d(0, 0, 1, 720deg);
   }
 }
+
+@keyframes moveUp {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
