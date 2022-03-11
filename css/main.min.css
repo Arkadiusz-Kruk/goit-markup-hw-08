@@ -26,7 +26,6 @@
   }
 }
 
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -543,7 +542,7 @@ a {
 .modal__form-input:focus {
   border-radius: 4px;
   outline: none;
-  border: 1px solid #2196f3;;
+  border: 1px solid #2196f3;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__form-textarea {
@@ -555,39 +554,37 @@ a {
 .modal__form-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  }
+}
 
 @media (max-width: 480px) {
-
   .modal__form-textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
   }
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 1200px) {
   .modal__form-textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
   }
 }
 
@@ -665,7 +662,7 @@ a {
 }
 .newsletter__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -907,13 +904,12 @@ a {
     margin-top: 20px;
     width: 450px;
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.01em;
-
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
   }
   .portfolio__card {
     width: 354px;
