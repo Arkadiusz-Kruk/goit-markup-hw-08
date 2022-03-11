@@ -1,18 +1,9 @@
 @keyframes animateModal {
-  from {
-    top: -300px;
-    opacity: 0;
+  0% {
+    transform: translate(-50%, -50%) scale(0) rotate3d(0, 0, 1, 0deg);
   }
-  to {
-    top: 50%;
-    opacity: 1;
-  }
-}
-@keyframes moveUp {
-  from {
-    top: 100%;
-  }
-  to {
-    top: 0;
+
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate3d(0, 0, 1, 720deg);
   }
 }
