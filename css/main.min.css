@@ -1,3 +1,33 @@
+@media (min-width: 55px) {
+  .newsletter__input {
+    margin-top: 20px;
+    padding-left: 16px;
+    width: 280px;
+    height: 46px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: none;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media (min-width: 480px) {
+  .newsletter__input {
+    margin-top: 20px;
+    padding-left: 16px;
+    width: 430px;
+    height: 46px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: none;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
 .v-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -28,6 +58,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 h1,
 h2,
@@ -661,17 +692,22 @@ a {
 .email-icon:focus {
   background-image: url("../images/svg/icon-email-main-color.svg");
 }
-.newsletter__input {
-  margin-top: 20px;
-  padding-left: 16px;
-  width: 100%;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: none;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+
+------------------------------------------------------------------------
+  @media
+  (min-width: 768px) {
+  .newsletter__input {
+    margin-top: 20px;
+    padding-left: 16px;
+    width: 430px;
+    height: 46px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: none;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 .newsletter__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
@@ -1114,4 +1150,3 @@ a {
       url("../images/hero-img/image-hero@2x-desktop.jpg");
   }
 }
-/*# sourceMappingURL=main.min.css.map */
