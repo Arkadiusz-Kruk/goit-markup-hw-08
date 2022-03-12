@@ -693,7 +693,6 @@ a {
   background-image: url("../images/svg/icon-email-main-color.svg");
 }
 
-------------------------------------------------------------------------
   @media
   (min-width: 768px) {
   .newsletter__input {
