@@ -725,8 +725,8 @@ a {
 /*===end-footer-newsletter===*/
 .menu {
   display: none;
-  width: 100vw;
-  height: auto;
+  width: 100vh;
+  height: 5457px;
   background-color: #fff;
   position: absolute;
   top: 0;
