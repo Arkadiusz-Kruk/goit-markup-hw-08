@@ -6,7 +6,6 @@
         "../sass/utils/_variables.scss",
         "../sass/utils/_mix.scss",
         "../sass/utils/-v-hidden.scss",
-        "../sass/vendors/_normalize.scss",
         "../sass/base/_animations.scss",
         "../sass/base/_common.scss",
         "../sass/base/_container.scss",
